@@ -1,0 +1,64 @@
+/* Custom CSS for center alignment and smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    max-width: 800px; /* Adjust max-width as needed */
+}
+
+/* Adjustments for Hero Section */
+#hero .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+#hero .hero-title {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 1rem; /* Add spacing below the text */
+}
+
+#hero .hero-cta {
+    text-align: left; /* Align button to the left */
+}
+
+#hero img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjustments for image container */
+.image-container {
+    width: 50%; /* Set width of the container */
+    padding-left: 2rem; /* Add some padding to the left */
+}
+
+/* Adjustments for contact form container */
+.contact-form {
+    width: 100%; /* Set width of the contact form */
+    max-width: 500px; /* Set maximum width to prevent it from becoming too wide */
+    margin: 0 auto; /* Center the contact form horizontally */
+}
+
+@media (max-width: 768px) {
+    /* Adjust container width for smaller screens */
+    .image-container {
+        width: 100%; /* Set width to full width for smaller screens */
+        padding-left: 0; /* Remove padding */
+        padding-top: 2rem; /* Add some padding to the top */
+    }
+}
